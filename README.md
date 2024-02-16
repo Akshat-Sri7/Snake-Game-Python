@@ -17,13 +17,15 @@ Welcome to the Python Turtle Snake Game – a classic and entertaining project t
 
 * Responsive Design: The game is designed to be responsive, adapting to various screen sizes and resolutions. Whether you're playing on a large desktop monitor or a smaller laptop screen, the Snake Game will provide an optimal gaming experience.
 
+Please refer to the [Turtle documentation](https://docs.python.org/3/library/turtle.html) for a whole list of commands and full features.
+
 ## How to Play:
 
-* Clone or download the repository to your local machine.
-* Ensure you have Python and the Turtle library installed.
-* Run the Python script, and the Snake Game will launch in a new window.
-* Use the arrow keys to control the snake and collect food to score points.
-* Be cautious and avoid collisions to keep the game going.
+1. Clone or download the repository to your local machine.
+2. Ensure you have Python and the Turtle library installed.
+3. Run the Python script, and the Snake Game will launch in a new window.
+4. Use the arrow keys to control the snake and collect food to score points.
+5. Be cautious and avoid collisions to keep the game going.
 
 
-This Snake Game project is not just a nostalgic throwback to the classic arcade era but also serves as a fantastic introduction to Python programming for beginners. Dive into the code, explore the mechanics, and enhance your Python skills while having a great time. Let the Snake Game bring joy and challenge to your coding journey!
+**This Snake Game project is not just a nostalgic throwback to the classic arcade era but also serves as a fantastic introduction to Python programming for beginners. Dive into the code, explore the mechanics, and enhance your Python skills while having a great time. Let the Snake Game bring joy and challenge to your coding journey!**
