@@ -8,7 +8,7 @@ LEFT = 180
 RIGHT = 0
 
 # Tweak the Snake's Shape and Color here:
-TURTLE_SHAPE = "circle"
+TURTLE_SHAPE = "square"
 TURTLE_COLOR = "green"
 
 
@@ -29,6 +29,13 @@ class Snake:
         new_t.penup()
         new_t.goto(pos)
         self.segments.append(new_t)
+
+    def snake_reset(self):
+        for seg in self.segments:
+            seg.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
 
     def extend(self):
         self.add_segment(self.segments[-1].position())
