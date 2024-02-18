@@ -4,9 +4,8 @@ from food import Food
 from scoreboard import ScoreBoard
 import time
 
-# Sets the speed of the snake, increase the value for a slower speed and vice versa
+# Sets the speed of the snake, decrease the value for a slower speed and vice versa
 SNAKE_SPEED = 0.1
-# Note: The speed value cannot be negative
 
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -36,12 +35,12 @@ while is_game_on:
         score.increase_score()
 
     if snake.head.xcor() < -290 or snake.head.xcor() > 290 or snake.head.ycor() < -290 or snake.head.ycor() > 255:
-        is_game_on = False
-        score.game_over()
+        score.score_reset()
+        snake.snake_reset()
 
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
-            is_game_on = False
-            score.game_over()
+            score.score_reset()
+            snake.snake_reset()
 
 screen.exitonclick()
